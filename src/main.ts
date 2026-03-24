@@ -4,8 +4,8 @@ import { AppModule } from './app.module';
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
 
-  app.enableCors(); // ✅ Fix Network Error
+  app.enableCors();
 
-  await app.listen(5000); // ✅ Match your frontend API URL
+  await app.listen(5000);
 }
 bootstrap();
